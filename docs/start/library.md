@@ -1,0 +1,134 @@
+# Built-in module
+
+In order to solve the problem of version dependency and common package unification, smallfish has built-in maintenance of React, antd, dva and other libraries in addition to APIs exposed by various functions. The version upgrade of each library is maintained by smallfish, and the compatibility problems caused by these third-party libraries can be erased by the maintenance of smallfish. It can be used directly.
+
+You can also introduce external dependencies by yarn add [modulename] --save (tnpm install [modulename] --save). To enhance the maintainability of the project, please choose to introduce external dependencies if you don't need it. If you think an external library is pretty good, you can recommend it to us. If you can, we can add it to the built-in library.
+
+All built-in module prefixes are smallfish.
+
+## React & ReactDom
+
+```js
+Import React, { useState } from 'smallfish/react';
+Import ReactDom from 'smallfish/react-dom';
+```
+
+More React fundamentals and componentization can be found in [Understanding React] (https://react.docschina.org/tutorial/tutorial.html).
+
+## antd
+
+[Ant Design] (https://ant.design) is a mid- and back-end design language dedicated to improving the user and designer experience, using a unified design specification, front-end implementation, design/development toolchain for products. R&D empowerment, comprehensively improve the mid- and back-end product experience and R&D efficiency, and it uses React to encapsulate a set of Ant Design component libraries.
+
+In the smallfish app, you can quickly access it in the following ways:
+
+```js
+Import { Button } from 'smallfish/antd';
+```
+
+## antd pro
+
+[Ant Design Pro] (https://pro.ant.design/docs/getting-started-cn) is an enterprise-class mid-background front-end/design solution that adheres to the design values ​​of Ant Design and is committed to design specifications and foundations. On the basis of components, we will continue to build up and extract typical template/business components/supporting design resources to further enhance the experience of “users” and “designers” in the design and development of enterprise-level mid- and back-end products.
+
+In the smallfish app, you can quickly access it in the following ways:
+
+```js
+// config/config.js
+{
+  Antdpro: true,
+}
+```
+
+```js
+Import { PageHeader } from 'smallfish/ant-design-pro';
+```
+
+## Routing related router
+
+For ease of use in smallfish, we abstract the routing related to `smallfish/router`:
+
+```js
+Import {
+  Router,
+  History,
+  Link,
+  NavLink,
+  Prompt,
+  Redirect,
+  Route,
+  withRouter,
+} from 'smallfish/router';
+```
+
+If you want to learn more, see more about router: [react-router](https://reacttraining.com/react-router/)
+
+## Network Request Request
+
+At the web request level, we use the excellent [umi/request] (https://github.com/umijs/umi-request) to handle all network configuration.
+
+```js
+Import request from 'smallfish/request';
+```
+
+If you want to see a real project request package instance, see: [How to handle network requests] (./404)
+
+## dva
+
+[dva](https://dvajs.com/) is a lightweight package based on the existing application architecture (redux + react-router + redux-saga, etc.). The problem solved by dva is that there are too many current concept of the technology stack, and reducer, saga, and action are separate (sub-files). For details, see dva.
+
+In the smallfish app, you can quickly access dva in the following ways:
+
+```js
+// config/config.js
+{
+  Dva: true,
+}
+```
+
+Once dva is turned on, the model directory will take effect, the dva model will be loaded automatically, and the dva method can be used:
+
+```js
+Import { connect } from 'smallfish/dva';
+```
+
+## styled
+
+[styled-components](https://www.styled-components.com/) is a commonly used css in js class library. The ability to solve native css, such as variables, loops, functions, etc., is solved by js.
+
+In the smallfish app, you can quickly access styled in the following ways:
+
+```js
+// config/config.js
+{
+  Styled: true,
+}
+```
+
+```js
+Import styled from 'smallfish/styled';
+
+Const WhiteDiv = styled.div`
+  Color: #fff;
+`;
+```
+
+## Util
+
+The smallfish/utils class library is a collection of commonly used toolkits that solve the difficulty of selection.
+
+- classnames
+- cookie
+- debug
+- fecha
+- moment
+- propTypes
+- queryString
+- react-document-title
+
+This can be used in smallfish applications like this:
+
+```js
+Import moment from 'smallfish/utils/moment';
+Import cookie from 'smallfish/utils/js-cookie';
+Import propTypes from 'smallfish/utils/prop-types';
+Import queryString from 'smallfish/utils/query-string';
+```
