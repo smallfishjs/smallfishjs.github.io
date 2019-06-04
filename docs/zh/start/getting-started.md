@@ -54,7 +54,7 @@ $ npm build // or yarn build
 2. 全局替换所有 @alipay/bigfish 的依赖包为 smallfish：
     - sdk 替换为 dva
     - 所有 router 相关统一来源于 'smallfish/router'
-    - 在替换的过程中可能会需要的 [smallfish 包对照表](./config)
+    - 在替换的过程中可能会需要的 [smallfish 包对照表](./library.html)
 3. 修改 config/config.js 为开关配置模式，参看 [smallfish 脚手架](https://github.com/smallfishjs/smallfish-boilerplate-management-system/blob/master/config/config.js)
 4. 对比 smallfish 脚手架，去掉冗余的文件、文件夹
 
@@ -62,7 +62,7 @@ $ npm build // or yarn build
 从 umi 改为 smallfish 可以说是最没有成本的，只需要以下几步即可搞定：
 1. 打开 package.json 替换 umi 命令为 smallfish
 2. 全局替换 umi 以及其它依赖包为 smallfish；
-    - 在替换的过程中可能会需要的 [smallfish 包对照表](./config)
+    - 在替换的过程中可能会需要的 [smallfish 包对照表](./library.html)
 3. 修改 config/config.js 为开关配置模式，参看 [smallfish 脚手架](https://github.com/smallfishjs/smallfish-boilerplate-management-system/blob/master/config/config.js)
 4. 对比 smallfish 脚手架，去掉冗余的文件、文件夹
 5. 复数文件夹改为单数
