@@ -2,7 +2,7 @@
 
 为了解决版本依赖以及常用包统一的问题，smallfish 除了各项功能暴露的 API 外，smallfish 还内置维护了 React，antd，dva 等库。由 smallfish 来维护各个库的版本升级，通过 smallfish 内部的维护来抹去这些第三方库可能造成的兼容性问题，可直接使用。
 
-你也可以通过 yarn add [modulename] --save (tnpm install [modulename] --save) 来引入外部依赖，为了增强项目的可维护性，如无必要请谨慎选择引入外部依赖。如果你觉得某个外部的库比较不错，也可以推荐给我们，如果可以，我们可以把其加入到内置库中。
+你也可以通过 `yarn add [modulename] --save` (`npm install [modulename] --save`) 来引入外部依赖，为了增强项目的可维护性，如无必要请谨慎选择引入外部依赖。如果你觉得某个外部的库比较不错，也可以推荐给我们，如果可以，我们可以把其加入到内置库中。
 
 所有的内置模块前缀都为 smallfish。
 
@@ -115,20 +115,24 @@ const WhiteDiv = styled.div`
 
 smallfish/utils 类库里面集合了常用的工具型类包，解决了选择困难症。
 
-- classnames
-- cookie
-- debug
-- fecha
-- moment
-- propTypes
-- queryString
-- react-document-title
+- [classnames](https://github.com/JedWatson/classnames)：处理多个 classname 的利器
+- [js-cookie](https://github.com/js-cookie/js-cookie)：处理 cookie
+- [debug](https://github.com/visionmedia/debug)：更好的控制台 log 输出
+- [moment](https://momentjs.com/)：强大的时间处理库
+- [prop-types](https://www.npmjs.com/package/prop-types)：React 的类型验证
+- [query-string](https://www.npmjs.com/package/query-string)：处理 url 参数
+- [react-document-title](https://github.com/gaearon/react-document-title)：设置 React 页面标题
+- [lodash](https://lodash.com/)：丰富的 javascript 工具套件
 
 在 smallfish 应用中可以这样使用：
 
 ```js
-import moment from 'smallfish/utils/moment';
-import cookie from 'smallfish/utils/js-cookie';
-import propTypes from 'smallfish/utils/prop-types';
-import queryString from 'smallfish/utils/query-string';
+import 'smallfish/util/moment/locale/zh-cn';
+import moment from 'smallfish/util/moment';
+
+import cookie from 'smallfish/util/js-cookie';
+import propTypes from 'smallfish/util/prop-types';
+import queryString from 'smallfish/util/query-string';
+
+import array from 'smallfish/util/lodash';
 ```

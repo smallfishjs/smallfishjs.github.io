@@ -54,16 +54,16 @@ Changing from bigfish to smallfish is arguably the least costly, and it only tak
 2. Globally replace all `@alipay/bigfish` dependencies with smallfish:
     - replace sdk with dva
     - All routers are related to 'smallfish/router'
-    - [smallfish package comparison table] (./config) that may be needed during the replacement process
-3. Modify `config/config.js` to switch configuration mode, see [smallfish scaffolding] (https://github.com/smallfishjs/smallfish-boilerplate-management-system/blob/master/config/config.js)
+    - [smallfish package comparison table](./config) that may be needed during the replacement process
+3. Modify `config/config.js` to switch configuration mode, see [smallfish scaffolding](https://github.com/smallfishjs/smallfish-boilerplate-management-system/blob/master/config/config.js)
 4. Compare smallfish scaffolding and remove redundant files and folders
 
 #### From umi
 Changing from umi to smallfish can be said to be the least costly, and only needs to be done in the following steps:
 1. Open `package.jso`n and replace the umi command with smallfish
 2. Global replacement umi and other dependencies are smallfish;
-    - [smallfish package comparison table] (./config) that may be needed during the replacement process
-3. Modify `config/config.js` to switch configuration mode, see [smallfish scaffolding] (https://github.com/smallfishjs/smallfish-boilerplate-management-system/blob/master/config/config.js)
+    - [smallfish package comparison table](./config) that may be needed during the replacement process
+3. Modify `config/config.js` to switch configuration mode, see [smallfish scaffolding](https://github.com/smallfishjs/smallfish-boilerplate-management-system/blob/master/config/config.js)
 4. Compare smallfish scaffolding and remove redundant files and folders
 5. The plural folder is changed to singular
 
