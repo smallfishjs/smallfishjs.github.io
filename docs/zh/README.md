@@ -6,9 +6,9 @@ features:
   - title: 简单
     details: 我们将开发环境中的一切都开关化配置，所有套件开箱即用；不用关心繁杂的包依赖升级问题，只需要关心 smallfish 一个版本；
   - title: 规范
-    details: smallfish 将开发过程中的所有流程都指定好了规范，开发过程就像搭积木，让你的精力百分百聚焦到业务逻辑中；
+    details: smallfish 将开发过程中的所有流程都制定好了规范，开发过程就像搭积木，让你的精力百分百聚焦到业务逻辑中；
   - title: 统一
-    details: 强约束的体系让所有开发者在 smallfish 体系下写出来的代码都规范统一，极大的减轻后续维护成本；
+    details: 强约束的体系让所有开发者在 smallfish 体系下写出来的代码都规范统一，极大减轻后续维护成本；
 footer: MIT Licensed | Copyright © 2018-present
 ---
 
