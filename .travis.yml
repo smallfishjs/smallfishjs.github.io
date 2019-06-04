@@ -3,7 +3,7 @@ node_js:
   - 'v10.14.2'
 branches:
   only:
-    - master
+    - gh-pages
 cache:
   directories:
     - node_modules
@@ -18,7 +18,7 @@ deploy:
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   local-dir: ./docs/.vuepress/dist/
-  target-branch: gh-pages
+  target-branch: master
   verbose: true
   on:
-    branch: master
+    branch: gh-pages
