@@ -6,11 +6,11 @@ The route configured in smallfish is in `config/config.js`:
 
 ```js
 // config/routes.js
-Export default [
+export default [
   {
-    Path: '',
-    Component: '../layout',
-    Routes: [
+    path: '',
+    component: '../layout',
+    routes: [
       { path: '/', component: 'Home' },
       { path: '/list', component: 'List' },
     ],
@@ -20,10 +20,10 @@ Export default [
 
 ```js
 // config/config.js
-Import routes from './routes';
+import routes from './routes';
 
-Export default {
-  Routes, // set the route, it is generally recommended to use the routes file alone
+export default {
+  routes, // set the route, it is generally recommended to use the routes file alone
 };
 ```
 
@@ -35,7 +35,7 @@ The convention `page/404.js` is a 404 page and needs to return the React compone
 
 ```js
 // page/404.js
-Export default () => <div>404</div>;
+export default () => <div>404</div>;
 ```
 
 ## Using routing methods
@@ -43,7 +43,7 @@ Export default () => <div>404</div>;
 You can get all the methods you need to manipulate the route by `import { xxx } from 'smallfish/router';`.
 
 ```js
-Import {
+import {
   Router,
   History,
   Link,
@@ -61,11 +61,11 @@ The permission routing of smallfish is implemented by configuring the Routes pro
 
 ```js
 // config/routes.js
-Export default [
+export default [
   {
-    Path: '',
-    Component: '../layout',
-    Routes: [
+    path: '',
+    component: '../layout',
+    routes: [
       { path: '/', component: 'Home' },
       { path: '/list', component: 'List', Routes: 'PrivateRoute' },
     ],
@@ -77,7 +77,7 @@ And through the `PrivteRoute` component? you can control the `List` component to
 
 ```js
 // page/privteRoute.js
-Export default ({ component as Component, hasAuth, ...rest }) => {
+export default ({ component as Component, hasAuth, ...rest }) => {
   Return (
     <>
     {

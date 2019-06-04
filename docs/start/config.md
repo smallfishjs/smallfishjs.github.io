@@ -6,27 +6,27 @@ You can configure smallfish in `config/config.js`, and most of the configuration
 
 ```jsx
 // config/config.js
-Import routes from './routes';
+import routes from './routes';
 
-Export default {
-  Antd: true, // turn on antd, default true, can introduce antd component
-  Antdpro: true, // turn on antd pro, default false, can introduce ant-design-pro component
-  Styled: true, // open styled, default false, style can be written in styled-component
-  Dva: true, // turn on dva, default false, use dva
-  I18n: true, // turn on i18n multi-language feature, default is true, use smallfish/i18n kit
+export default {
+  antd: true,      // turn on antd, default true, can introduce antd component
+  antdpro: true,   // turn on antd pro, default false, can introduce ant-design-pro component
+  styled: true,    // open styled, default false, style can be written in styled-component
+  dva: true,       // turn on dva, default false, use dva
+  i18n: true,      // turn on i18n multi-language feature, default is true, use smallfish/i18n kit
 
-  History: 'hash', // routing mode, default is hash, can be browser
-  Routes, // set the route, it is generally recommended to use the routes file alone
+  history: 'hash', // routing mode, default is hash, can be browser
+  routes,          // set the route, it is generally recommended to use the routes file alone
 };
 ```
 
 ```jsx
 // config/routes.js
-Export default [
+export default [
   {
-    Path: '',
-    Component: '../layout',
-    Routes: [
+    path: '',
+    component: '../layout',
+    routes: [
       { path: '/', component: 'Home' },
       { path: '/list', component: 'List' },
     ],
@@ -44,11 +44,11 @@ Add a pre-JS to execute the configured script before the HTML application logic 
 
 ```js
 {
-  Script: [
+  script: [
     '//gw.alipayobjects.com/os/rmsportal/MUhciYBNsWHgRcKJaCAH.js',
     `
-    Const test = 'app config';
-    Console.log(test);
+    const test = 'app config';
+    console.log(test);
     `,
   ],
 }
@@ -60,12 +60,12 @@ Add a pre-style to add styles at the very beginning of the HTML. Style introduct
 
 ```js
 {
-  Style: [
+  style: [
     '//gw.alipayobjects.com/os/rmsportal/yZocPnjKidyvpGcGYKFs.css',
     'http://gw.alipayobjects.com/os/rmsportal/yUIfbViByGXvPzPqtINT.css',
     `
-      Body {
-        Font-size: 14px;
+      body {
+        font-size: 14px;
       }
     `,
   ];
@@ -77,7 +77,7 @@ Add a pre-style to add styles at the very beginning of the HTML. Style introduct
 Configure the [externals](https://webpack.js.org/configuration/externals/) property of webpack.
 
 ```js
-/ / Configure react and react-dom do not enter the code
+// Configure react and react-dom do not enter the code
 "externals": {
   "react": "window.React",
   "react-dom": "window.ReactDOM"

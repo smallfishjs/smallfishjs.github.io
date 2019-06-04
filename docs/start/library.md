@@ -9,8 +9,8 @@ All built-in module prefixes are smallfish.
 ## React & ReactDom
 
 ```js
-Import React, { useState } from 'smallfish/react';
-Import ReactDom from 'smallfish/react-dom';
+import React, { useState } from 'smallfish/react';
+import ReactDom from 'smallfish/react-dom';
 ```
 
 More React fundamentals and componentization can be found in [Understanding React] (https://react.docschina.org/tutorial/tutorial.html).
@@ -22,7 +22,7 @@ More React fundamentals and componentization can be found in [Understanding Reac
 In the smallfish app, you can quickly access it in the following ways:
 
 ```js
-Import { Button } from 'smallfish/antd';
+import { Button } from 'smallfish/antd';
 ```
 
 ## antd pro
@@ -34,12 +34,12 @@ In the smallfish app, you can quickly access it in the following ways:
 ```js
 // config/config.js
 {
-  Antdpro: true,
+  antdpro: true,
 }
 ```
 
 ```js
-Import { PageHeader } from 'smallfish/ant-design-pro';
+import { PageHeader } from 'smallfish/ant-design-pro';
 ```
 
 ## Routing related router
@@ -47,7 +47,7 @@ Import { PageHeader } from 'smallfish/ant-design-pro';
 For ease of use in smallfish, we abstract the routing related to `smallfish/router`:
 
 ```js
-Import {
+import {
   Router,
   History,
   Link,
@@ -66,7 +66,7 @@ If you want to learn more, see more about router: [react-router](https://reacttr
 At the web request level, we use the excellent [umi/request] (https://github.com/umijs/umi-request) to handle all network configuration.
 
 ```js
-Import request from 'smallfish/request';
+import request from 'smallfish/request';
 ```
 
 If you want to see a real project request package instance, see: [How to handle network requests] (./404)
@@ -80,7 +80,7 @@ In the smallfish app, you can quickly access dva in the following ways:
 ```js
 // config/config.js
 {
-  Dva: true,
+  dva: true,
 }
 ```
 
@@ -99,15 +99,15 @@ In the smallfish app, you can quickly access styled in the following ways:
 ```js
 // config/config.js
 {
-  Styled: true,
+  styled: true,
 }
 ```
 
 ```js
-Import styled from 'smallfish/styled';
+import styled from 'smallfish/styled';
 
-Const WhiteDiv = styled.div`
-  Color: #fff;
+const WhiteDiv = styled.div`
+  color: #fff;
 `;
 ```
 
@@ -127,8 +127,8 @@ The smallfish/utils class library is a collection of commonly used toolkits that
 This can be used in smallfish applications like this:
 
 ```js
-Import moment from 'smallfish/utils/moment';
-Import cookie from 'smallfish/utils/js-cookie';
-Import propTypes from 'smallfish/utils/prop-types';
-Import queryString from 'smallfish/utils/query-string';
+import moment from 'smallfish/utils/moment';
+import cookie from 'smallfish/utils/js-cookie';
+import propTypes from 'smallfish/utils/prop-types';
+import queryString from 'smallfish/utils/query-string';
 ```

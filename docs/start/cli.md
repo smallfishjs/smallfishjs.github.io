@@ -6,9 +6,9 @@ Start the local development mode and the app will launch. Data requests will tak
 
 ```js
 {
-  Script: {
+  script: {
     ...
-    Dev: 'smallfish dev',
+    dev: 'smallfish dev',
     ...
   }
 }
@@ -49,6 +49,6 @@ Perform code format verification.
 
 ## smallfish i18n
 
-Extract the copy in the project and replace it with a placeholder that supports multiple languages.
+Extract the copy in the project and replace it with a placeholder that supports i18n languages.
 
-> Stay tuned
+> Coming soon
