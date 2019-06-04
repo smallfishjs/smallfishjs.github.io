@@ -16,6 +16,6 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push --set-upstream https://github.com/smallfishjs/smallfishjs.github.io.git master
+git push --set-upstream https://github.com/smallfishjs/smallfishjs.github.io.git master --force
 
 cd -
