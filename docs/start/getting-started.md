@@ -32,10 +32,10 @@ $ git clone https://github.com/smallfishjs/smallfish-boilerplate-management-syst
 $ cd my-project
 
 #Installation dependency
-$ yarn
+$ npm install // or yarn
 
 #Start service
-$ yarn start
+$ npm start // or yarn start
 
 # Open a browser to access http://127.0.0.1:8000 (the port number may change according to the situation)
 ```
@@ -44,7 +44,7 @@ $ yarn start
 
 ```bash
 # can see the generated file under ./dist
-$ yarn build
+$ npm build // or yarn build
 ```
 
 ## Transformation of the original project

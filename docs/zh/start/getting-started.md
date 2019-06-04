@@ -32,10 +32,10 @@ $ git clone https://github.com/smallfishjs/smallfish-boilerplate-management-syst
 $ cd my-project
 
 # 安装依赖
-$ yarn
+$ npm install // or yarn
 
 # 启动服务
-$ yarn start
+$ npm start // or yarn start
 
 # 打开浏览器访问 http://127.0.0.1:8000(端口号可能会根据情况变化)
 ```
@@ -44,7 +44,7 @@ $ yarn start
 
 ```bash
 # 即可在 ./dist 下看到生成的文件
-$ yarn build
+$ npm build // or yarn build
 ```
 
 ## 原有项目的改造

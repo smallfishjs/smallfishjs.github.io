@@ -29,9 +29,9 @@ $ git clone https://github.com/smallfishjs/smallfish-boilerplate-management-syst
 
 $ cd my-app
 
-$ yarn // or npm install
+$ npm install // or yarn
 
-$ yarn start // or npm start
+$ npm start // or yarn start
 ```
 
 > yarn(https://yarnpkg.com/) is a faster and more convenient package manager than npm
