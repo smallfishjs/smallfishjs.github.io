@@ -34,6 +34,25 @@ The source of the routing component is hosted under the `./page` directory struc
 The convention `page/404.js` is a 404 page and needs to return the React component.
 
 ```js
+// config/routes.js
+export default [
+  {
+    component: '../layout',
+    routes: [
+      { path: '/', component: 'home' },
+      { path: '/list', component: 'list' },
+      { path: '/user', component: 'user' },
+      { path: '/test', component: 'test' },
+      { path: '/private', component: 'private', Routes: ['src/page/auth'] },
+      {
+        component: '404',
+      },
+    ],
+  },
+];
+```
+
+```js
 // page/404.js
 export default () => <div>404</div>;
 ```
@@ -62,31 +81,27 @@ The permission routing of smallfish is implemented by configuring the Routes pro
 ```js
 // config/routes.js
 export default [
-  {
-    path: '',
-    component: '../layout',
-    routes: [
-      { path: '/', component: 'Home' },
-      { path: '/list', component: 'List', Routes: 'PrivateRoute' },
-    ],
-  },
+  {
+    path: '',
+    component: '../layout',
+    routes: [
+      { path: '/', component: 'Home' },
+      { path: '/list', component: 'List', Routes: ['src/page/Auth'] },
+    ],
+  },
 ];
 ```
 
-And through the `PrivteRoute` component? you can control the `List` component to display:
+And through the `Auth` component? you can control the `List` component to display:
 
 ```js
-// page/privteRoute.js
-export default ({ component as Component, hasAuth, ...rest }) => {
-  Return (
-    <>
-    {
-      hasAuth && <Component {...rest}>
-    }
-    {
-      !hasAuth && <NotAuth />
-    }
-    </>
-  );
-}
+// page/auth.js
+export default ({ children, hasAuth }) => {
+  return (
+    <>
+      {hasAuth && children}
+      {!hasAuth && <NotAuth />}
+    </>
+  );
+};
 ```

@@ -34,6 +34,25 @@ export default {
 约定 `page/404.js` 为 404 页面，需返回 React 组件。
 
 ```js
+// config/routes.js
+export default [
+  {
+    component: '../layout',
+    routes: [
+      { path: '/', component: 'home' },
+      { path: '/list', component: 'list' },
+      { path: '/user', component: 'user' },
+      { path: '/test', component: 'test' },
+      { path: '/private', component: 'private', Routes: ['src/page/auth'] },
+      {
+        component: '404',
+      },
+    ],
+  },
+];
+```
+
+```js
 // page/404.js
 export default () => <div>404</div>;
 ```
@@ -67,26 +86,22 @@ export default [
     component: '../layout',
     routes: [
       { path: '/', component: 'Home' },
-      { path: '/list', component: 'List', Routes: 'PrivateRoute' },
+      { path: '/list', component: 'List', Routes: ['src/page/Auth'] },
     ],
   },
 ];
 ```
 
-而通过 `PrivteRoute` 组件  则可以控制 `List` 组件展现：
+而通过 `Auth` 组件  则可以控制 `List` 组件展现：
 
 ```js
-// page/privteRoute.js
-export default ({ component as Component, hasAuth, ...rest }) => {
+// page/auth.js
+export default ({ children, hasAuth }) => {
   return (
     <>
-    {
-      hasAuth && <Component {...rest}>
-    }
-    {
-      !hasAuth && <NotAuth />
-    }
+      {hasAuth && children}
+      {!hasAuth && <NotAuth />}
     </>
   );
-}
+};
 ```

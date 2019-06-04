@@ -123,12 +123,15 @@ smallfish/utils 类库里面集合了常用的工具型类包，解决了选择�
 - [query-string](https://www.npmjs.com/package/query-string)：处理 url 参数
 - [react-document-title](https://github.com/gaearon/react-document-title)：设置 React 页面标题
 - [lodash](https://lodash.com/)：丰富的 javascript 工具套件
+- [uuid](https://www.npmjs.com/package/uuid)：好用的 UUIDS 生成器
 
 在 smallfish 应用中可以这样使用：
 
 ```js
 import 'smallfish/util/moment/locale/zh-cn';
 import moment from 'smallfish/util/moment';
+
+import uuid from 'smallfish/util/uuid/v4';
 
 import cookie from 'smallfish/util/js-cookie';
 import propTypes from 'smallfish/util/prop-types';

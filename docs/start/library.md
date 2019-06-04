@@ -123,12 +123,15 @@ The smallfish/utils class library is a collection of commonly used toolkits that
 - [query-string](https://www.npmjs.com/package/query-string): Handling url parameters
 - [react-document-title](https://github.com/gaearon/react-document-title): Set the React page title
 - [lodash](https://lodash.com/): Rich javascript toolkit
+- [uuid](https://www.npmjs.com/package/uuid)：Simple, fast generation of RFC4122 UUIDS.
 
 This can be used in smallfish applications like this:
 
 ```js
 import 'smallfish/util/moment/locale/zh-cn';
 import moment from 'smallfish/util/moment';
+
+import uuid from 'smallfish/util/uuid/v4';
 
 import cookie from 'smallfish/util/js-cookie';
 import propTypes from 'smallfish/util/prop-types';
