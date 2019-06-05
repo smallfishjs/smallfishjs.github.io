@@ -1,6 +1,6 @@
 # 简介
 
-smallfish 不同于以往的 React 框架，它是从蚂蚁金服内部系统中台应用框架 bigfish 发展而来，致力于解决蚂蚁金服生态圈内 isv 以及 jv 公司的前端开发问题。 smallfish 提供了一整套中台系统的前端开发的解决方案，强约束、强规范、开箱即用，是 smallfish 的愿景。
+smallfish 不同于以往的 React 框架，它是从蚂蚁金服内部系统中台应用框架 bigfish 发展而来，致力于解决中台的前端开发问题。 smallfish 提供了一整套中台系统的前端开发的解决方案，强约束、强规范、开箱即用，是 smallfish 的愿景。
 
 ## 为什么要有 smallfish
 

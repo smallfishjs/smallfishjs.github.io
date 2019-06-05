@@ -1,6 +1,6 @@
 # Introduction
 
-Smallfish is different from the previous React framework. It is developed from the internal application framework of the Ant Financial System, and is dedicated to solving the front-end development problems of the isv and jv companies in the Ant Financial Ecosystem. Smallfish provides a complete set of front-end development solutions for mid-range systems, strong constraints, strong specifications, and out-of-the-box, is the vision of smallfish.
+Smallfish is different from the previous React framework. It is developed from the internal application framework of the Ant Financial System, and is dedicated to solving the front-end development problems of the backend-office system. Smallfish provides a complete set of front-end development solutions for mid-range systems, strong constraints, strong specifications, and out-of-the-box, is the vision of smallfish.
 
 ## Why should I have a smallfish?
 
