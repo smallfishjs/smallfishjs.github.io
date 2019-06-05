@@ -83,3 +83,33 @@ Configure the [externals](https://webpack.js.org/configuration/externals/) prope
   "react-dom": "window.ReactDOM"
 }
 ```
+
+## Environment Variable
+
+### Port Configuration
+
+Smallfish has port occupancy detection by default. Normally you don't need to care about port problems, but in some cases where you need a fixed port, you can specify the port by setting the `PORT` environment variable:
+
+```json
+{
+   "script": {
+     ...
+     "dev": "PORT=9090 smallfish dev",
+     ...
+   }
+}
+```
+
+### Close HMR
+
+HMR (hot-module-replacement) allows all types of modules to be updated at runtime without a full refresh. The default is turned on, but in some scenarios it may need to be turned off (such as static file proxy). You can turn off HMR as follows:
+
+```json
+{
+   "script": {
+     ...
+     "dev:nohmr": "HMR=none smallfish dev",
+     ...
+   }
+}
+```

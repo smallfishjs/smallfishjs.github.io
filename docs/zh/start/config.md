@@ -83,3 +83,33 @@ export default [
   "react-dom": "window.ReactDOM"
 }
 ```
+
+## 环境变量
+
+### 端口配置
+
+smallfish 默认有端口占用检测，通常情况下你无需关心端口问题，但是在某些需要固定端口的情况下你可以通过设置 `PORT` 环境变量进行端口指定：
+
+```json
+{
+  "script": {
+    ...
+    "dev": "PORT=9090 smallfish dev",
+    ...
+  }
+}
+```
+
+### 关闭 HMR
+
+HMR（模块热替换）允许在运行时更新所有类型的模块，而无需完全刷新，默认是开启的，但是在某些场景下可能需要关闭（如静态文件代理），可通过如下方式关闭 HMR：
+
+```json
+{
+  "script": {
+    ...
+    "dev:nohmr": "HMR=none smallfish dev",
+    ...
+  }
+}
+```
