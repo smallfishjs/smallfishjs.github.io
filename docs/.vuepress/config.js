@@ -41,6 +41,7 @@ module.exports = {
               children: [
                 '',
                 'getting-started',
+                'deploy',
                 'dirs',
                 'config',
                 'router',
@@ -56,7 +57,6 @@ module.exports = {
               collapsable: false,
               children: [
                 '',
-                'dynamic',
                 'mf',
                 'antd-form',
                 'form-modal',
@@ -103,6 +103,7 @@ module.exports = {
               children: [
                 '',
                 'getting-started',
+                'deploy',
                 'dirs',
                 'config',
                 'router',
@@ -118,7 +119,6 @@ module.exports = {
               collapsable: false,
               children: [
                 '',
-                'dynamic',
                 'mf',
                 'antd-form',
                 'form-modal',
