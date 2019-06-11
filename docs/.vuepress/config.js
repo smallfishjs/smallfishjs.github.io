@@ -41,7 +41,6 @@ module.exports = {
               children: [
                 '',
                 'getting-started',
-                'deploy',
                 'dirs',
                 'config',
                 'router',
@@ -104,7 +103,6 @@ module.exports = {
               children: [
                 '',
                 'getting-started',
-                'deploy',
                 'dirs',
                 'config',
                 'router',
