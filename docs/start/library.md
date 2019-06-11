@@ -42,7 +42,7 @@ In the smallfish app, you can quickly access it in the following ways:
 import { PageHeader } from 'smallfish/ant-design-pro';
 ```
 
-## Routing related router
+## router
 
 For ease of use in smallfish, we abstract the routing related to `smallfish/router`:
 
@@ -61,7 +61,7 @@ import {
 
 If you want to learn more, see more about router: [react-router](https://reacttraining.com/react-router/)
 
-## Network Request Request
+## request
 
 At the web request level, we use the excellent [umi/request](https://github.com/umijs/umi-request) to handle all network configuration.
 

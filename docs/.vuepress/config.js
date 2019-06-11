@@ -57,9 +57,9 @@ module.exports = {
               collapsable: false,
               children: [
                 '',
+                'dynamic',
                 'antd-form',
                 'form-modal',
-                'lego',
                 'proxy',
                 'request',
               ],
@@ -119,9 +119,9 @@ module.exports = {
               collapsable: false,
               children: [
                 '',
+                'dynamic',
                 'antd-form',
                 'form-modal',
-                'lego',
                 'proxy',
                 'request',
               ],
