@@ -35,7 +35,6 @@ In fact, it follows:
 
 ```jsx
 <AntdProLayout id={id}>
-    
   <BasicTable />
 </AntdProLayout>
 ```
@@ -84,31 +83,31 @@ import React from 'smallfish/react';
 import { DataContainer, RenderComponent } from 'smallfish/dcc';
 
 const schema = {
-  ppi: {
-    getWife: '',
-  },
-  root: {
-    id: 'parent',
-    componentName: 'Parent',
-    props: {},
-    children: [
-      {
-        id: 'sun',
-        componentName: 'Sun',
-        props: {},
-      },
-      {
-        id: 'daughter',
-        componentName: 'Daughter',
-        props: {},
-      },
-    ],
-  },
+  ppi: {
+    getWife: '',
+  },
+  root: {
+    id: 'parent',
+    componentName: 'Parent',
+    props: {},
+    children: [
+      {
+        id: 'sun',
+        componentName: 'Sun',
+        props: {},
+      },
+      {
+        id: 'daughter',
+        componentName: 'Daughter',
+        props: {},
+      },
+    ],
+  },
 };
 
 const Parent = DataContainer(({ children }) => <div>Parent {children}</div>, {
-  Car: 'GTR',
-  House: 'Chengdu',
+  Car: 'GTR',
+  House: 'Chengdu',
 });
 Parent.displayName = 'Parent';
 
@@ -119,25 +118,23 @@ const Cat = ({ name }) => <div>cat's master firstname is {name}</div>;
 Cat.displayName = 'Cat';
 
 const Daughter = ({ storeData, GlobalConsumer }) => (
-  <div>
-    Daughter has {storeData.house}
-    <GlobalConsumer>
-      {({ globalData }) => <Cat name={globalData.firstname} />}
-    </GlobalConsumer>
-  </div>
+  <div>
+    Daughter has {storeData.house}
+    <GlobalConsumer>
+      {({ globalData }) => <Cat name={globalData.firstname} />}
+    </GlobalConsumer>
+  </div>
 );
 Daughter.displayName = 'Daughter';
 
 export default () => (
-  <div>
-    <RenderComponent
-      schema={schema}
-      components={[Parent, Sun, Daughter]}
-      globalData={{
-        Firstname: 'jack',
-      }}
-    />
-  </div>
+  <RenderComponent
+    schema={schema}
+    components={[Parent, Sun, Daughter]}
+    globalData={{
+      firstname: 'jack',
+    }}
+  />
 );
 ```
 
@@ -147,7 +144,7 @@ When a component is wrapped by `DataContainer`, it represents a business process
 
 ```jsx
 const Parent = DataContainer(({ children }) => <div>Parent {children}</div>, {
-  car: 'GTR', // initialized store: { car: 'GTR' }
+  car: 'GTR', // initialized store: { car: 'GTR' }
 });
 Parent.displayName = 'Parent';
 
@@ -157,14 +154,14 @@ Sun.displayName = 'Sun';
 
 // subcomponents can also set data via setStoreData
 const Sun = ({ storeData, setStoreData }) => {
-  // Update car to BMW, then the car read by the parent and child components will change
-  useEffect(() => {
-    setStoreData({
-      Car: 'BMW',
-    });
-  }, []);
+  // Update car to BMW, then the car read by the parent and child components will change
+  useEffect(() => {
+    setStoreData({
+      car: 'BMW',
+    });
+  }, []);
 
-  return <div>sun has {storeData.car}</div>;
+  return <div>sun has {storeData.car}</div>;
 };
 Sun.displayName = 'Sun';
 ```
@@ -177,32 +174,32 @@ A business system may have multiple business processes, each of which is a busin
 
 ```jsx
 const Parent = DataContainer(
-  ({ children, GlobalConsumer }) => (
-    <GlobalConsumer>
-      {({ globalData, setGlobalData }) => (
-        <>
-          Parent name: {globalData.firstname} has: {children}
-        </>
-      )}
-    </GlobalConsumer>
-  ),
-  {
-    Car: 'GTR', // initialized globalData: { car: 'GTR' }
-  },
+  ({ children, GlobalConsumer }) => (
+    <GlobalConsumer>
+            
+      {({ globalData, setGlobalData }) => (
+        <>
+          Parent name: {globalData.firstname} has: {children}
+        </>
+      )}
+          
+    </GlobalConsumer>
+  ),
+  {
+    car: 'GTR', // initialized globalData: { car: 'GTR' }
+  },
 );
 Parent.displayName = 'Parent';
 
 export default () => (
-  <div>
-    <RenderComponent
-      Schema={schema}
-      Components={[Parent, Sun, Daughter]}
-      globalData={{
-        // global data
-        Firstname: 'jack',
-      }}
-    />
-  </div>
+  <RenderComponent
+    schema={schema}
+    components={[Parent, Sun, Daughter]}
+    globalData={{
+      // global data
+      Firstname: 'jack',
+    }}
+  />
 );
 ```
 
@@ -214,21 +211,23 @@ These can all be achieved with the `globalConfig` property:
 
 ```jsx
 export default () => (
-  <div>
-    <RenderComponent
-      Schema={schema}
-      Components={[Parent, Sun, Daughter]}
-      globalData={{
-        // global data
-        Firstname: 'jack',
-      }}
-      globalConfig={{
-        Api: shema.api,
-        Ajax,
-        rootPath: '/test',
-        Router, // Since RenderComponent is a separate piece, the route needs to be passed globally.
-      }}
-    />
-  </div>
+  <div>
+        
+    <RenderComponent
+      Schema={schema}
+      Components={[Parent, Sun, Daughter]}
+      globalData={{
+        // global data
+        firstname: 'jack',
+      }}
+      globalConfig={{
+        api: shema.api,
+        ajax,
+        rootPath: '/test',
+        router, // Since RenderComponent is a separate piece, the route needs to be passed globally.
+      }}
+    />
+      
+  </div>
 );
 ```
