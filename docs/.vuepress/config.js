@@ -58,6 +58,7 @@ module.exports = {
               children: [
                 '',
                 'dynamic',
+                'mf',
                 'antd-form',
                 'form-modal',
                 'proxy',
@@ -120,6 +121,7 @@ module.exports = {
               children: [
                 '',
                 'dynamic',
+                'mf',
                 'antd-form',
                 'form-modal',
                 'proxy',
