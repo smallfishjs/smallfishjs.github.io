@@ -57,7 +57,6 @@ module.exports = {
               collapsable: false,
               children: [
                 '',
-                'dynamic',
                 'mf',
                 'antd-form',
                 'form-modal',
@@ -120,7 +119,6 @@ module.exports = {
               collapsable: false,
               children: [
                 '',
-                'dynamic',
                 'mf',
                 'antd-form',
                 'form-modal',
