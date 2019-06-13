@@ -63,7 +63,7 @@ If you want to learn more, see more about router: [react-router](https://reacttr
 
 ## request
 
-At the web request level, we use the excellent [umi/request](https://github.com/umijs/umi-request) to handle all network configuration.
+At the web request level, we use the excellent [axios](https://github.com/axios/axios) to handle all network configuration.
 
 ```js
 import request from 'smallfish/request';

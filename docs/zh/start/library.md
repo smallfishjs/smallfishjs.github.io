@@ -63,7 +63,7 @@ import {
 
 ## 网络请求 request
 
-在网络请求这一层，我们底层使用了优秀的 [umi/request](https://github.com/umijs/umi-request)，可以处理网络方面的所有配置。
+在网络请求这一层，我们底层使用了优秀的 [axios](https://github.com/axios/axios)，可以处理网络方面的所有配置。
 
 ```js
 import request from 'smallfish/request';
