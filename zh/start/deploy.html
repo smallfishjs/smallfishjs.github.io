@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>构建部署 | smallfish</title>
+    <meta name="description" content="一个专注于中台系统的 React 前端解决方案">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.02904f7e.css" as="style"><link rel="preload" href="/assets/js/app.dbb79151.js" as="script"><link rel="preload" href="/assets/js/3.e17a9923.js" as="script"><link rel="preload" href="/assets/js/35.52bead75.js" as="script"><link rel="prefetch" href="/assets/js/10.a1a462b2.js"><link rel="prefetch" href="/assets/js/11.f5e6ab30.js"><link rel="prefetch" href="/assets/js/12.d6d495ff.js"><link rel="prefetch" href="/assets/js/13.a09db50a.js"><link rel="prefetch" href="/assets/js/14.4a6c6c1d.js"><link rel="prefetch" href="/assets/js/15.3ee11541.js"><link rel="prefetch" href="/assets/js/16.377e61b3.js"><link rel="prefetch" href="/assets/js/17.ad13e981.js"><link rel="prefetch" href="/assets/js/18.ca5fadbe.js"><link rel="prefetch" href="/assets/js/19.74f9ca92.js"><link rel="prefetch" href="/assets/js/20.0c726915.js"><link rel="prefetch" href="/assets/js/21.cec7863f.js"><link rel="prefetch" href="/assets/js/22.d9156cd0.js"><link rel="prefetch" href="/assets/js/23.8d650c59.js"><link rel="prefetch" href="/assets/js/24.b2be5d6e.js"><link rel="prefetch" href="/assets/js/25.c3cdd6c0.js"><link rel="prefetch" href="/assets/js/26.6adb1560.js"><link rel="prefetch" href="/assets/js/27.36c24168.js"><link rel="prefetch" href="/assets/js/28.49a8889e.js"><link rel="prefetch" href="/assets/js/29.e0abad37.js"><link rel="prefetch" href="/assets/js/30.c515804e.js"><link rel="prefetch" href="/assets/js/31.4e003572.js"><link rel="prefetch" href="/assets/js/32.4b2257b9.js"><link rel="prefetch" href="/assets/js/33.abfb0c5e.js"><link rel="prefetch" href="/assets/js/34.aa5152c7.js"><link rel="prefetch" href="/assets/js/36.57b418df.js"><link rel="prefetch" href="/assets/js/37.c170a2db.js"><link rel="prefetch" href="/assets/js/38.5721ac38.js"><link rel="prefetch" href="/assets/js/39.5acf6df4.js"><link rel="prefetch" href="/assets/js/4.f206c44b.js"><link rel="prefetch" href="/assets/js/40.0b5708b1.js"><link rel="prefetch" href="/assets/js/41.0430bb26.js"><link rel="prefetch" href="/assets/js/42.7a6b1c0a.js"><link rel="prefetch" href="/assets/js/5.cbb16fe7.js"><link rel="prefetch" href="/assets/js/6.19619c44.js"><link rel="prefetch" href="/assets/js/7.8f31b0d3.js"><link rel="prefetch" href="/assets/js/8.44f732a4.js"><link rel="prefetch" href="/assets/js/9.b715be2f.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.219b40d1.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.02904f7e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/zh/" class="home-link router-link-active"><!----> <span class="site-name">smallfish</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/zh/start/" class="nav-link router-link-active">使用 smallfish</a></div><div class="nav-item"><a href="/zh/scene/" class="nav-link">场景化方案</a></div><div class="nav-item"><a href="/zh/tool/" class="nav-link">提效工具</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/start/deploy.html" class="nav-link">English</a></li><li class="dropdown-item"><!----> <a href="/zh/start/deploy.html" class="nav-link router-link-exact-active router-link-active">简体中文</a></li></ul></div></div> <a href="https://github.com/smallfishjs/smallfish" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/zh/start/" class="nav-link router-link-active">使用 smallfish</a></div><div class="nav-item"><a href="/zh/scene/" class="nav-link">场景化方案</a></div><div class="nav-item"><a href="/zh/tool/" class="nav-link">提效工具</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/start/deploy.html" class="nav-link">English</a></li><li class="dropdown-item"><!----> <a href="/zh/start/deploy.html" class="nav-link router-link-exact-active router-link-active">简体中文</a></li></ul></div></div> <a href="https://github.com/smallfishjs/smallfish" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>使用 smallfish</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zh/start/" class="sidebar-link">简介</a></li><li><a href="/zh/start/getting-started.html" class="sidebar-link">开始使用</a></li><li><a href="/zh/start/deploy.html" class="active sidebar-link">构建部署</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zh/start/deploy.html#使用-docker-来构建部署" class="sidebar-link">使用 docker 来构建部署</a></li></ul></li><li><a href="/zh/start/dirs.html" class="sidebar-link">目录结构</a></li><li><a href="/zh/start/config.html" class="sidebar-link">配置</a></li><li><a href="/zh/start/router.html" class="sidebar-link">路由</a></li><li><a href="/zh/start/library.html" class="sidebar-link">内置模块</a></li><li><a href="/zh/start/cli.html" class="sidebar-link">命令行工具</a></li><li><a href="/zh/start/i18n.html" class="sidebar-link">国际化</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="构建部署"><a href="#构建部署" aria-hidden="true" class="header-anchor">#</a> 构建部署</h1> <h2 id="使用-docker-来构建部署"><a href="#使用-docker-来构建部署" aria-hidden="true" class="header-anchor">#</a> 使用 docker 来构建部署</h2> <p>在此之前，你需要了解 <a href="https://www.docker.com/" target="_blank" rel="noopener noreferrer">docker<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 是什么，并且安装它。</p> <p>如果你选用了 docker，那么我们推荐使用 nginx 作为 web 容器，经过简单的配置你就可以得到一个独立的、稳定的 web 静态服务器。</p> <p>如果你想快速开始，那么直接移步到 <a href="https://github.com/smallfishjs/smallfish-boilerplates-management-system" target="_blank" rel="noopener noreferrer">脚手架<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 查看一个真实示例。</p> <p>下面也将结合这个脚手架说明如何集成你的应用到 docker 中。</p> <h3 id="建立的-dockfile"><a href="#建立的-dockfile" aria-hidden="true" class="header-anchor">#</a> 建立的 Dockfile</h3> <p>首先在你的更目录下创建 <code>Dockerfile</code>，用来告诉 docker 如何处理你的应用，通常是这样：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>FROM nginx <span class="token comment"># 以 nginx 镜像基础</span>
+
+WORKDIR /usr/src/app/ <span class="token comment"># 指定你的工作目录</span>
+
+COPY ./docker/nginx.conf /etc/nginx/conf.d/default.conf <span class="token comment"># 替换自定义的 nginx 配置</span>
+
+COPY ./docker/ssl /etc/nginx/ssl/ <span class="token comment"># 替换 ssl 证书以支持 https</span>
+
+COPY ./dist  /usr/share/nginx/html/ <span class="token comment"># 替换 dist 为静态映射目录</span>
+
+EXPOSE 80 443 <span class="token comment"># http 端口 &amp; https 端口</span>
+
+CMD <span class="token punctuation">[</span><span class="token string">&quot;nginx&quot;</span>, <span class="token string">&quot;-g&quot;</span>, <span class="token string">&quot;daemon off;&quot;</span><span class="token punctuation">]</span> <span class="token comment"># 启动 nginx</span>
+</code></pre></div><p>以上就是一个最基础的 Dockerfile，可以从里面看出我们需要在根目录新建 <code>docker</code> 文件夹用来存放相关的配置：<code>nginx.conf</code> 以及 ssl 证书。</p> <h3 id="配置-nginx"><a href="#配置-nginx" aria-hidden="true" class="header-anchor">#</a> 配置 nginx</h3> <p>nginx 的样例在 smallfish 脚手架中已经配置好了，你可以直接使用。</p> <div class="language- extra-class"><pre class="language-text"><code>server {
+    listen 80;
+    # gzip config
+    gzip on;
+
+    root /usr/share/nginx/html;
+
+    location / {
+        # browserHistory
+        #try_files $uri $uri/ /index.html;
+
+        # hashHistory
+        index index.html;
+    }
+
+    # location /api {
+    #     proxy_pass [your service host];
+    #     proxy_set_header   X-Forwarded-Proto $scheme;
+    #     proxy_set_header   Host              $http_host;
+    #     proxy_set_header   X-Real-IP         $remote_addr;
+    # }
+
+}
+
+# https
+server {
+    # https + http2
+    # listen 443 ssl http2;
+
+    # https
+    listen 443 ssl;
+
+    server_name localhost;
+
+    # /etc/nginx/nginx.conf
+    ssl_certificate /etc/nginx/ssl/server.crt;
+    ssl_certificate_key /etc/nginx/ssl/server.key;
+    ssl_session_timeout 5m;
+
+    root /usr/share/nginx/html;
+
+    location / {
+        # browserHistory
+        #try_files $uri $uri/ /index.html;
+
+        # hashHistory
+        index index.html;
+    }
+
+    # location /api {
+    #     proxy_pass [your service host];
+    #     proxy_set_header   X-Forwarded-Proto $scheme;
+    #     proxy_set_header   Host              $http_host;
+    #     proxy_set_header   X-Real-IP         $remote_addr;
+    # }
+}
+</code></pre></div><h3 id="设置构建部署步骤"><a href="#设置构建部署步骤" aria-hidden="true" class="header-anchor">#</a> 设置构建部署步骤</h3> <p>除了直接打包出镜像以外，我们有时候需要跑起镜像看看是否满足期望，所以我们需要一个 <code>docker-compose.yml</code>，帮我们快速的跑起一个 docker 服务。</p> <p>在 <code>docker</code> 下添加 <code>docker-compose.yml</code>：</p> <div class="language- extra-class"><pre class="language-text"><code>version: '3.5'
+
+services:
+  smallfish-web:
+    image: nginx
+    ports:
+      - 80:80
+      - 443:443
+    container_name: 'smallfish-web_dev'
+    restart: unless-stopped
+    volumes:
+      - ../dist:/usr/share/nginx/html:ro
+      - ./ssl:/etc/nginx/ssl:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+
+volumes:
+  dist:
+</code></pre></div><p>然后添加几个命令到我们的 <code>package.json</code>：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  script<span class="token operator">:</span> <span class="token punctuation">{</span>
+    ...
+    <span class="token property">&quot;docker:dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;docker-compose -f ./docker/docker-compose.yml up&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;docker:build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;smallfish build &amp;&amp; docker build -f Dockerfile -t smallfish-web ./&quot;</span><span class="token punctuation">,</span>
+    ...
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>运行 <code>npm run docker:dev</code> 即可将当前项目以 docker 方式运行起来，而 <code>npm run docker:build</code> 则能构建一个镜像，你可以将它部署到支持 docker 的平台上。</p> <h3 id="https-证书"><a href="#https-证书" aria-hidden="true" class="header-anchor">#</a> https 证书</h3> <p>https 的证书可以通过 <a href="https://www.openssl.org/source/" target="_blank" rel="noopener noreferrer">openssl<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 生成。</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/smallfishjs/smallfish/edit/master/docs/zh/start/deploy.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">6/10/2019, 5:07:47 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/zh/start/getting-started.html" class="prev">
+          开始使用
+        </a></span> <span class="next"><a href="/zh/start/dirs.html">
+          目录结构
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.dbb79151.js" defer></script><script src="/assets/js/3.e17a9923.js" defer></script><script src="/assets/js/35.52bead75.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>国际化 | smallfish</title>
+    <meta name="description" content="一个专注于中台系统的 React 前端解决方案">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.02904f7e.css" as="style"><link rel="preload" href="/assets/js/app.dbb79151.js" as="script"><link rel="preload" href="/assets/js/3.e17a9923.js" as="script"><link rel="preload" href="/assets/js/38.5721ac38.js" as="script"><link rel="prefetch" href="/assets/js/10.a1a462b2.js"><link rel="prefetch" href="/assets/js/11.f5e6ab30.js"><link rel="prefetch" href="/assets/js/12.d6d495ff.js"><link rel="prefetch" href="/assets/js/13.a09db50a.js"><link rel="prefetch" href="/assets/js/14.4a6c6c1d.js"><link rel="prefetch" href="/assets/js/15.3ee11541.js"><link rel="prefetch" href="/assets/js/16.377e61b3.js"><link rel="prefetch" href="/assets/js/17.ad13e981.js"><link rel="prefetch" href="/assets/js/18.ca5fadbe.js"><link rel="prefetch" href="/assets/js/19.74f9ca92.js"><link rel="prefetch" href="/assets/js/20.0c726915.js"><link rel="prefetch" href="/assets/js/21.cec7863f.js"><link rel="prefetch" href="/assets/js/22.d9156cd0.js"><link rel="prefetch" href="/assets/js/23.8d650c59.js"><link rel="prefetch" href="/assets/js/24.b2be5d6e.js"><link rel="prefetch" href="/assets/js/25.c3cdd6c0.js"><link rel="prefetch" href="/assets/js/26.6adb1560.js"><link rel="prefetch" href="/assets/js/27.36c24168.js"><link rel="prefetch" href="/assets/js/28.49a8889e.js"><link rel="prefetch" href="/assets/js/29.e0abad37.js"><link rel="prefetch" href="/assets/js/30.c515804e.js"><link rel="prefetch" href="/assets/js/31.4e003572.js"><link rel="prefetch" href="/assets/js/32.4b2257b9.js"><link rel="prefetch" href="/assets/js/33.abfb0c5e.js"><link rel="prefetch" href="/assets/js/34.aa5152c7.js"><link rel="prefetch" href="/assets/js/35.52bead75.js"><link rel="prefetch" href="/assets/js/36.57b418df.js"><link rel="prefetch" href="/assets/js/37.c170a2db.js"><link rel="prefetch" href="/assets/js/39.5acf6df4.js"><link rel="prefetch" href="/assets/js/4.f206c44b.js"><link rel="prefetch" href="/assets/js/40.0b5708b1.js"><link rel="prefetch" href="/assets/js/41.0430bb26.js"><link rel="prefetch" href="/assets/js/42.7a6b1c0a.js"><link rel="prefetch" href="/assets/js/5.cbb16fe7.js"><link rel="prefetch" href="/assets/js/6.19619c44.js"><link rel="prefetch" href="/assets/js/7.8f31b0d3.js"><link rel="prefetch" href="/assets/js/8.44f732a4.js"><link rel="prefetch" href="/assets/js/9.b715be2f.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.219b40d1.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.02904f7e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/zh/" class="home-link router-link-active"><!----> <span class="site-name">smallfish</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/zh/start/" class="nav-link router-link-active">使用 smallfish</a></div><div class="nav-item"><a href="/zh/scene/" class="nav-link">场景化方案</a></div><div class="nav-item"><a href="/zh/tool/" class="nav-link">提效工具</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/start/i18n.html" class="nav-link">English</a></li><li class="dropdown-item"><!----> <a href="/zh/start/i18n.html" class="nav-link router-link-exact-active router-link-active">简体中文</a></li></ul></div></div> <a href="https://github.com/smallfishjs/smallfish" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/zh/start/" class="nav-link router-link-active">使用 smallfish</a></div><div class="nav-item"><a href="/zh/scene/" class="nav-link">场景化方案</a></div><div class="nav-item"><a href="/zh/tool/" class="nav-link">提效工具</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/start/i18n.html" class="nav-link">English</a></li><li class="dropdown-item"><!----> <a href="/zh/start/i18n.html" class="nav-link router-link-exact-active router-link-active">简体中文</a></li></ul></div></div> <a href="https://github.com/smallfishjs/smallfish" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>使用 smallfish</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zh/start/" class="sidebar-link">简介</a></li><li><a href="/zh/start/getting-started.html" class="sidebar-link">开始使用</a></li><li><a href="/zh/start/deploy.html" class="sidebar-link">构建部署</a></li><li><a href="/zh/start/dirs.html" class="sidebar-link">目录结构</a></li><li><a href="/zh/start/config.html" class="sidebar-link">配置</a></li><li><a href="/zh/start/router.html" class="sidebar-link">路由</a></li><li><a href="/zh/start/library.html" class="sidebar-link">内置模块</a></li><li><a href="/zh/start/cli.html" class="sidebar-link">命令行工具</a></li><li><a href="/zh/start/i18n.html" class="active sidebar-link">国际化</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zh/start/i18n.html#使用多语言" class="sidebar-link">使用多语言</a></li><li class="sidebar-sub-header"><a href="/zh/start/i18n.html#日期多语言" class="sidebar-link">日期多语言</a></li><li class="sidebar-sub-header"><a href="/zh/start/i18n.html#自动提取项目文案" class="sidebar-link">自动提取项目文案</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="国际化"><a href="#国际化" aria-hidden="true" class="header-anchor">#</a> 国际化</h1> <p>目前的 smallfish 对国际化的支持只有多语言，但是在后续我们会逐步增加更多国际化的支持。</p> <h2 id="使用多语言"><a href="#使用多语言" aria-hidden="true" class="header-anchor">#</a> 使用多语言</h2> <h3 id="开启-smallfish-i18n"><a href="#开启-smallfish-i18n" aria-hidden="true" class="header-anchor">#</a> 开启 smallfish i18n</h3> <div class="language-json extra-class"><pre class="language-json"><code><span class="token comment">// config/config.js</span>
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;i18n&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="设定语言包"><a href="#设定语言包" aria-hidden="true" class="header-anchor">#</a> 设定语言包</h3> <p>smallfish 规定在 <code>src/i18n</code> 下存放你的语言包，像这样：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>── src
+   ├── <span class="token punctuation">..</span>.
+   ├── i18n               // * 国际化相关数据
+   <span class="token operator">|</span>   ├── zh-CN.json     // * 中文语言包
+   <span class="token operator">|</span>   ├── en-US.json     // * 英文语言包
+   <span class="token operator">|</span>   ├── *.js           // * 单个语言的国际化数据
+   <span class="token operator">|</span>   └── index.js       // * 国际化语言数据入口文件
+   └── <span class="token punctuation">..</span>.
+</code></pre></div><p>可以看到，<code>i18n</code> 目录下有一个入口文件和语言包，入口文件很简单，就是引入各个语言包：</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token string">'en-US'</span><span class="token punctuation">:</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./en-US.json'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token string">'zh-CN'</span><span class="token punctuation">:</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./zh-CN.json'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>语言包的 json 就更简单了，都是键值对，如下：</p> <div class="language- extra-class"><pre class="language-text"><code>// src/i18n/en-US.json
+{
+  &quot;sf_page_SubPage_ChineseTest&quot;: &quot;Chinese test&quot;,
+  &quot;sf_page_SubPage_LaLa&quot;: &quot;La, la&quot;,
+  &quot;sf_page_SubPage_HaHaHa&quot;: &quot;Ha ha ha&quot;,
+  &quot;sf_page_SubPage_IAmContinueToThe&quot;: &quot;I am continue to the test&quot;,
+  &quot;sf_page_SubPage_IThink&quot;: &quot;I think&quot;,
+  &quot;sf_page_SubPage_Is&quot;: &quot;Is&quot;,
+  &quot;sf_page_SubPage_Big&quot;: &quot;Big&quot;,
+  &quot;sf_page_SubPage_DDaysHHours&quot;: &quot;{{d}} days {{h}} hours&quot;,
+  &quot;sf_page_SubPage_IAmTestHaHa&quot;: &quot;I am test ha ha ha&quot;,
+  &quot;sf_page_SubPage_INowWithTheLanguage&quot;: &quot;I now with the language a is {{inlanguage}}&quot;
+}
+</code></pre></div><h3 id="在代码里面使用"><a href="#在代码里面使用" aria-hidden="true" class="header-anchor">#</a> 在代码里面使用</h3> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">import</span> i18n <span class="token keyword">from</span> <span class="token string">'smallfish/i18n'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Alert <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'smallfish/antd'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Alert</span></span> <span class="token attr-name">message</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>i18n<span class="token punctuation">.</span><span class="token function">t</span><span class="token punctuation">(</span><span class="token string">'sf_page_SubPage_LaLa'</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span> <span class="token punctuation">/&gt;</span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token punctuation">{</span>i18n<span class="token punctuation">.</span><span class="token function">t</span><span class="token punctuation">(</span><span class="token string">'sf_page_SubPage_INowWithTheLanguage'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        inlanguage<span class="token punctuation">:</span> i18n<span class="token punctuation">.</span>language<span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><code>smallfish/i18n</code> 的底层是 <a href="https://www.i18next.com/overview/getting-started" target="_blank" rel="noopener noreferrer">i18next<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>，smallfish 已经帮你配置好了常用的方案，如果有更多需要可以参看对应的文档。</p> <h3 id="设置默认语言"><a href="#设置默认语言" aria-hidden="true" class="header-anchor">#</a> 设置默认语言</h3> <p>通常 <code>smallfish/i18n</code> 会检测用户的系统信息自动设置对应的语言，但是如果你想手动设置默认语言可以通过如下方式：</p> <p>调用 <code>changeLanguage</code> 方法</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> i18n <span class="token keyword">from</span> <span class="token string">'smallfish/i18n'</span><span class="token punctuation">;</span>
+
+i18n<span class="token punctuation">.</span><span class="token function">changeLanguage</span><span class="token punctuation">(</span><span class="token string">'zh-CN'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="日期多语言"><a href="#日期多语言" aria-hidden="true" class="header-anchor">#</a> 日期多语言</h2> <p>在 smallfish 中我们用 moment 套件做时间日期管理，moment 本身提供了多语言的设置，所以使用也很方便。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 引入对应的语言包</span>
+<span class="token keyword">import</span> <span class="token string">'smallfish/util/moment/locale/zh-cn'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> moment <span class="token keyword">from</span> <span class="token string">'smallfish/util/moment'</span><span class="token punctuation">;</span>
+
+moment<span class="token punctuation">.</span><span class="token function">fromNow</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// output: 几秒前</span>
+</code></pre></div><p>更多语言样例参看：<a href="https://momentjs.com/docs/#/i18n/" target="_blank" rel="noopener noreferrer">moment i18n<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="自动提取项目文案"><a href="#自动提取项目文案" aria-hidden="true" class="header-anchor">#</a> 自动提取项目文案</h2> <blockquote><p>目前暂未支持，敬请期待</p></blockquote> <p>smallfish 底层依赖了强大的 <code>parrot-tool-must</code> 工具，能够提取项目的文案，这样即使老旧的项目也可以一键替换为支持多语言的项目。</p> <h3 id="快速上手"><a href="#快速上手" aria-hidden="true" class="header-anchor">#</a> 快速上手</h3> <p>修改你的 <code>package.json</code>，增加 i18n 命令：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  script<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span>
+    i18n<span class="token punctuation">:</span> <span class="token string">'smallfish i18n'</span><span class="token punctuation">,</span>
+    <span class="token operator">...</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>根目录下运行命令：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># [path] 为指定需要提取的路径，默认是根目录</span>
+$ <span class="token function">npm</span> run i18n <span class="token punctuation">[</span>path<span class="token punctuation">]</span> // or <span class="token function">yarn</span> i18n <span class="token punctuation">[</span>path<span class="token punctuation">]</span>
+</code></pre></div><p>在运行这个命令会做如下几件事：</p> <ol><li>smallfish i18n 会扫描对应目录下的所有文件，提取出中文/英文，然后替换这些文案为 <code>i18n</code> 方法：</li></ol> <div class="language-diff extra-class"><pre class="language-diff"><code><span class="token inserted">+ import i18n from 'smallfish/i18n';</span>
+import { Alert } from 'smallfish/antd';
+
+export default () =&gt; (
+  &lt;div&gt;
+<span class="token deleted">-    &lt;Alert message=&quot;我本来是个中文&quot; /&gt;</span>
+<span class="token inserted">+    &lt;Alert message={i18n.t('sf_page_SubPage_LaLa')} /&gt;</span>
+<span class="token deleted">-    &lt;span&gt;当前语言是{inlanguage}&lt;/span&gt;</span>
+<span class="token inserted">+    &lt;span&gt;</span>
+<span class="token inserted">+      {i18n.t('sf_page_SubPage_INowWithTheLanguage', {</span>
+<span class="token inserted">+        inlanguage: i18n.language,</span>
+<span class="token inserted">+      })}</span>
+    &lt;/span&gt;
+  &lt;/div&gt;
+);
+</code></pre></div><ol start="2"><li>自动把提取出来的文案增量添加到语言包中，目前支持中文到英文的自动转换，后续还会支持更多语言：</li></ol> <div class="language-json extra-class"><pre class="language-json"><code><span class="token comment">// src/i18n/zh-CN.json</span>
+<span class="token punctuation">{</span>
+  ...
+  <span class="token property">&quot;sf_page_SubPage_LaLa&quot;</span><span class="token operator">:</span> <span class="token string">&quot;我本来是个中文&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;sf_page_SubPage_INowWithTheLanguage&quot;</span><span class="token operator">:</span> <span class="token string">&quot;当前语言是{{inlanguage}}&quot;</span><span class="token punctuation">,</span>
+  ...
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-json extra-class"><pre class="language-json"><code><span class="token comment">// src/i18n/zh-CN.json</span>
+<span class="token punctuation">{</span>
+  ...
+  <span class="token property">&quot;sf_page_SubPage_LaLa&quot;</span><span class="token operator">:</span> <span class="token string">&quot;i am chinese&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;sf_page_SubPage_INowWithTheLanguage&quot;</span><span class="token operator">:</span> <span class="token string">&quot;current language is {{inlanguage}}&quot;</span><span class="token punctuation">,</span>
+  ...
+<span class="token punctuation">}</span>
+</code></pre></div><p>大功告成，这个操作是增量的，所以在日常开发中你完全可以无需关心多语言替换问题，开发完毕一键替换即可。</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/smallfishjs/smallfish/edit/master/docs/zh/start/i18n.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">6/5/2019, 1:58:48 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/zh/start/cli.html" class="prev">
+          命令行工具
+        </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.dbb79151.js" defer></script><script src="/assets/js/3.e17a9923.js" defer></script><script src="/assets/js/38.5721ac38.js" defer></script>
+  </body>
+</html>
